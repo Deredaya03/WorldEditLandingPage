@@ -1,0 +1,100 @@
+---
+import HLink from "./HLink.astro";
+import DiscordIcon from "./icons/Discord.astro";
+import MenuIcon from "./icons/Menu.astro";
+import CloseIcon from "./icons/Close.astro";
+---
+
+<header
+  id="header-nav"
+  class="fixed w-full top-0 mx-auto px-6 py-2 gap-4 flex items-center justify-between z-1000"
+>
+  <div class="w-auto h-16">
+    <a href="/">
+      <img
+        class="fill-white w-auto h-16 absolute m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-50"
+        alt="WorldEdit: Bedrock Edition Icon Efecto"
+        src="https://media.forgecdn.net/avatars/thumbnails/1168/806/256/256/638739766326639454.png"
+      />
+      <img
+        class="fill-white w-auto h-16"
+        alt="WorldEdit: Bedrock Edition Icon"
+        src="https://media.forgecdn.net/avatars/thumbnails/1168/806/256/256/638739766326639454.png"
+      />
+    </a>
+  </div>
+  <nav
+    id="header-menu"
+    class="fixed w-full h-dvh inset-0 bg-[#070707]/70 md:text-lg lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:w-auto md:translate-y-[initial]"
+  >
+    <HLink href="/">INICIO</HLink>
+    <HLink href="/quick_start">INICIO RÁPIDO</HLink>
+    <HLink href="/document">DOCUMENTACIÓN</HLink>
+    <HLink href="/capturas">CAPTURAS</HLink>
+
+    <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+      <CloseIcon />
+    </a>
+    <a
+      href="https://discord.gg/pwVjUqSv4D"
+      target="_blank"
+      rel="nooper noreferrer"
+      class="md:ml-auto lg:text-base w-fit no-underline uppercase border-2 border-solid border-[#d93e3b] rounded-full card"
+    >
+      <div class="w-10 h-10 relative flex items-center justify-center">
+        <DiscordIcon
+        class="text-[#9CA3AF] w-full h-full hover:text-white transition-colors duration-300 relative z-10"
+        />
+      </div>
+    </a>
+  </nav>
+  <a href="#header-menu" class="md:hidden"><MenuIcon /></a>
+</header>
+
+<style>
+  @property --a {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 45%;
+    place-self: center;
+    place-content: center;
+    padding: 0.2em;
+    color: #ededed;
+    font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  .card::before {
+    position: absolute;
+    z-index: -1;
+    inset: 1px;
+    border: solid 15px;
+    border-image: conic-gradient(
+        from var(--a),
+        #d93e3b,
+        #d93e3b,
+        #00000000,
+        #00000000,
+        #00000000,
+        #00000000
+      )
+      1;
+    filter: blur(0.5em);
+    animation: a 2s linear infinite;
+    content: "";
+  }
+
+  @keyframes a {
+    to {
+      --a: 1turn;
+    }
+  }
+</style>

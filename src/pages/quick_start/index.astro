@@ -1,0 +1,98 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TableWarning from "../../components/Home/tableWarning.astro";
+---
+
+<Layout
+  title="WorldEdit: Inicio Rápido"
+  description="Guía rápida para comenzar a usar WorldEdit: Bedrock Edition"
+>
+  <div class="container lg:max-w-5xl md:max-w-2xl mx-auto max-w-xl w-full">
+    <div class="md:grid flex flex-col md:grid-cols-2 gap-4">
+      <div class="col-span-2">
+        <h1 class="text-2xl font-bold mb-4">Inicio Rápido</h1>
+        <p>
+          Por defecto, los jugadores no pueden usar WorldEdit. Solo aquellos
+          etiquetados con "worldedit" pueden usar sus funciones. Para obtener
+          todos los permisos de WorldEdit, entra
+          <a class="border border-white !bg-[#bdbdbd] px-1 label"
+            >/tag @s add worldedit</a
+          >
+          el chat. Recibirás un mensaje indicando que has otorgado permisos de WorldEdit.
+        </p>
+      </div>
+      <TableWarning
+        title="Consejo"
+        description="También puedes otorgar permisos de WorldEdit a otros jugadores cambiando @s el nombre del jugador. Deberás escribirlo entre comillas si tiene un espacio. Por ejemplo:/tag ”Steve Wanderer” add worldedit"
+        colorTitle="#1abc9c"
+        colorContent="#DBFAF4"
+      />
+      <div class="col-span-2">
+        <h2 class="text-xl font-semibold mt-6 mb-4">Comandos Iniciales</h2>
+        <p class="my-4">
+          Los comandos de este complemento usan punto y coma (;) en lugar de corchetes (/). En el futuro, Mojang podría añadir compatibilidad con comandos personalizados a Minecraft.
+        </p>
+        <ul class="list-disc pl-5">
+          <li>
+            <strong>;kit</strong> - Ofrece acceso a elementos que funcionan como
+            atajos a muchas funciones comunes de WorldEdit
+          </li>
+          <li>
+            <strong>;wand</strong> - Otorga el hacha de madera, que es la herramienta principal para seleccionar áreas.
+          </li>
+          <li>
+            <strong>;navwand</strong> - Otorga la perla de ender, que permite navegar por el mundo teletransportandote a donde estes mirando.
+          <li>
+            <strong>;?</strong> - Muestra la ayuda de WorldEdit.
+          </li>
+        </ul>
+        <h2 class="text-xl font-semibold mt-6 mb-4">
+          Herramientas de Selección
+        </h2>
+        <p>
+          Para seleccionar áreas, utiliza el hacha de madera. Haz clic izquierdo
+          para establecer el primer punto [;pos1] y clic derecho para el segundo punto [;pos2].
+          Puedes usar modos de selección cúbico, cilíndrico o esférico.
+        </p>
+        <h2 class="text-xl font-semibold mt-6 mb-4">Operaciones Comunes</h2>
+        <ul class="list-disc pl-5">
+          <li>
+            <strong>;set [bloque]</strong> - Establece el área seleccionada con
+            el bloque especificado.
+          </li>
+          <li>
+            <strong>;replace [mascara] [bloque]</strong> - Reemplaza bloques de la mascara seleccionada por el bloque escogido en
+            el área seleccionada.
+          </li>
+          <li>
+            <strong>;copy</strong> - Copia la selección al portapapeles.
+          </li>
+          <li>
+            <strong>;paste</strong> - Pega la selección copiada en la ubicación
+            actual.
+          </li>
+          <li>
+            <strong>;undo</strong> - Deshace la última operación.
+          </li>
+          <li>
+            <strong>;redo</strong> - Rehace la última operación deshecha.
+          </li>
+        </ul>
+        <h2 class="text-xl font-semibold mt-6 mb-4">Más Información</h2>
+        <p>
+          Para obtener más información sobre los comandos y funciones de
+          WorldEdit, consulta la <a
+            href="/document"
+            class="text-blue-500 underline">documentación completa</a
+          >.
+        </p>
+        <p>
+          Si tienes alguna pregunta o necesitas ayuda, puedes visitar el
+          <a href="https://discord.gg/WorldEdit" class="text-blue-500 underline"
+            >Discord de WorldEdit</a
+          >.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
