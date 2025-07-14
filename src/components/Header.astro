@@ -6,8 +6,8 @@ import CloseIcon from "@icons/Close.astro";
 ---
 
 <header id="header-nav">
-  <div class="content-logo">
-    <a href="/">
+  <div class="content-header">
+    <a href="/" class="content-logo">
       <img
         class="logo-blur"
         alt="WorldEdit: Bedrock Edition Icon Efecto"
@@ -19,28 +19,28 @@ import CloseIcon from "@icons/Close.astro";
         src="https://media.forgecdn.net/avatars/thumbnails/1168/806/256/256/638739766326639454.png"
       />
     </a>
-  </div>
-  <nav id="header-menu">
-    <HLink href="/">INICIO</HLink>
-    <HLink href="/quick_start">INICIO RÁPIDO</HLink>
-    <HLink href="/document">DOCUMENTACIÓN</HLink>
-    <HLink href="/capturas">CAPTURAS</HLink>
+    <nav id="header-menu">
+      <HLink href="/">INICIO</HLink>
+      <HLink href="/quick_start">INICIO RÁPIDO</HLink>
+      <HLink href="/document">DOCUMENTACIÓN</HLink>
+      <HLink href="/capturas">CAPTURAS</HLink>
 
-    <a href="#header-nav" class="close-icon">
-      <CloseIcon />
-    </a>
-    <a
-      href="https://discord.gg/pwVjUqSv4D"
-      target="_blank"
-      rel="nooper noreferrer"
-      class="card social"
-    >
-      <div class="icon-content">
-        <DiscordIcon class="icon-discord" />
-      </div>
-    </a>
-  </nav>
-  <a href="#header-menu" class="menu-icon"><MenuIcon /></a>
+      <a href="#header-nav" class="close-icon">
+        <CloseIcon />
+      </a>
+      <a
+        href="https://discord.gg/pwVjUqSv4D"
+        target="_blank"
+        rel="nooper noreferrer"
+        class="card social"
+      >
+        <div class="icon-content">
+          <DiscordIcon class="icon-discord" />
+        </div>
+      </a>
+    </nav>
+    <a href="#header-menu" class="menu-icon"><MenuIcon /></a>
+  </div>
 </header>
 
 <style>

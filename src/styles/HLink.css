@@ -1,0 +1,23 @@
+.HLink {
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  transition-property: color, border-bottom-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+
+.HLink:hover {
+  color: #ffffff;
+}
+
+.HLink-active {
+  border-bottom-color: #ffffff;
+  color: #ffffff;
+}
+
+.HLink-deactivated {
+  border-bottom-color: transparent;
+  color: #9ca3af;
+}

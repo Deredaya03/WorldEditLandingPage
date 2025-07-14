@@ -44,6 +44,10 @@
   line-height: 1.5rem;
 }
 
+.container-introduction .left .author .link-author {
+  color: #fff;
+}
+
 .container-introduction .left .content-introduction {
   font-size: 1.125rem;
   line-height: 1.75rem;
