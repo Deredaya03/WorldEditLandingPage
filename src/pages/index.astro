@@ -4,24 +4,22 @@ import Layout from "@layouts/Layout.astro";
 import Introduction from "@components/Home/introduction.astro";
 import TableWarning from "@components/Home/tableWarning.astro";
 import InstallationHome from "@components/Home/installationHome.astro";
+
+import "@styles/Index.css";
 ---
 
 <Layout
   title="WorldEdit: BE Documentacion"
   description="Documentacion no oficial de WorldEdit Addon para Minecraft Bedrock Edition"
 >
-  <div
-    class="container lg:max-w-4xl md:max-w-2xl mx-auto max-w-xl w-full"
-  >
-    <div class="md:grid flex flex-col md:grid-cols-2 gap-4">
-      <Introduction />
-      <TableWarning
+  <div class="container-index">    
+    <Introduction />
+    <TableWarning
       title="Advertencia"
       description="Este complemento está en desarrollo y se basa en funciones experimentales del juego. ¡Asegúrate de hacer copias de seguridad de tu mundo!"
       colorTitle="#f0b37e"
       colorContent="#FFEDCC"
-      />
-    </div>
+    />
     <InstallationHome />
   </div>
 </Layout>

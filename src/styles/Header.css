@@ -1,0 +1,141 @@
+#header-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+#header-nav .content-logo {
+  width: auto;
+  height: 64px;
+  display: grid;
+  place-content: center;
+}
+
+#header-nav .content-logo .logo-blur {
+  fill: white;
+  width: auto;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#header-nav .content-logo .logo-blur:hover {
+  opacity: .5;
+}
+
+#header-nav .content-logo .logo {
+  fill: white;
+  width: auto;
+  height: 60px;
+}
+
+#header-menu {
+  position: fixed;
+  height: 100dvh;
+  inset: 0;
+  background: rgba(7, 7, 7, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#header-menu:target {
+  transform: translateY(0);
+}
+
+#header-menu .close-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+#header-menu .social {
+  width: fit-content;
+  text-decoration-line: none;
+  text-transform: none;
+  border: 2px solid #d93e3b;
+}
+
+#header-menu .icon-content {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-menu .icon-discord {
+  color: #9ca3af;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 10;
+}
+
+#header-menu .icon-discord:hover {
+  color: white
+}
+
+@media (min-width: 768px) {
+  #header-menu {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    position: static;
+    height: initial;
+    inset: initial;
+    background: initial;
+    flex-direction: row;
+    width: auto;
+    transform: translateY(0);
+    transition: none;
+    z-index: auto;
+    padding: .5rem 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .social {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header-menu {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .social {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}

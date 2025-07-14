@@ -38,3 +38,31 @@ body {
   height: 70px;
   position: relative;
 }
+
+/* Table Warning */
+
+.container-table {
+  grid-column: span 2/ span 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.25rem 0; 
+}
+
+.container-table .icon-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.container-table .content-table {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+}

@@ -3,42 +3,41 @@ import DiscordIcon from "@components/icons/Discord.astro";
 import GithubIcon from "@components/icons/Github.astro";
 ---
 
-<div class="Footer col-span-2 bg-black text-white">
-  <div class="grid grid-cols-3 max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto py-10 gap-4">
+<div class="Footer">
+  <div class="content-footer">
     <section
-      class="title-footer md:col-span-1 col-span-3 flex flex-col items-center text center"
+      class="title-footer-content"
     >
-      <h3 class="text-lg font-bold">WorldEdit: BE</h3>
-      <p class="text-sm text-gray-500">
-        Documentación no oficial de WorldEdit Addon para Minecraft Bedrock
-        Edition
+      <h3 class="title-footer">WorldEdit: BE</h3>
+      <p class="subtitle-footer">
+        Documentación no oficial de WorldEdit Addon para Minecraft Bedrock Edition
       </p>
     </section>
     <section
-      class="logo-footer md:col-span-1 col-span-3 flex justify-center items-center"
+      class="logo-footer"
     >
-      <div class="w-auto h-20">
+      <div class="logo-footer-content">
         <a href="/">
           <img
-            class="fill-white w-auto h-20 absolute m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-50"
+            class="imagen-blur"
             alt="WorldEdit: Bedrock Edition Icon Efecto"
             src="https://media.forgecdn.net/avatars/thumbnails/1168/806/256/256/638739766326639454.png"
           />
           <img
-            class="fill-white w-auto h-20"
+            class="imagen"
             alt="WorldEdit: Bedrock Edition Icon"
             src="https://media.forgecdn.net/avatars/thumbnails/1168/806/256/256/638739766326639454.png"
           />
         </a>
       </div>
     </section>
-    <section class="links-footer grid grid-cols-2 col-span-3 md:col-span-1">
-      <div class="icons flex items-center justify-center gap-2 col-span-2">
+    <section class="links-footer">
+      <div class="icons">
         <a href="https://discord.gg/pwVjUqSv4D">
-          <DiscordIcon class="text-white w-auto h-8" />
+          <DiscordIcon class="text-white icon-social-footer" />
         </a>
         <a href="https://github.com/SIsilicon/WorldEdit-BE">
-          <GithubIcon class="text-white w-auto h-8" />
+          <GithubIcon class="text-white icon-social-footer" />
         </a>
         <a
           href="https://www.curseforge.com/minecraft-bedrock/scripts/worldedit-be-addon"
@@ -46,17 +45,17 @@ import GithubIcon from "@components/icons/Github.astro";
           <img
             src="/src/components/icons/curseforge.webp"
             alt=""
-            class="w-auto h-6"
+            class="curse-icon-social-footer"
           />
         </a>
         <a href="https://mcpedl.com/worldedit-be-addon/">
-          <img src="https://mcpedl.com/favicon.ico" alt="" class="w-auto h-8" />
+          <img src="https://mcpedl.com/favicon.ico" alt="" class="icon-social-footer" />
         </a>
         <a href="https://modbay.org/mods/629-worldedit-be.html">
           <img
             src="https://modbay.org/templates/Modbay2/images/favicon.ico"
             alt=""
-            class="w-auto h-8"
+            class="icon-social-footer"
           />
         </a>
       </div>

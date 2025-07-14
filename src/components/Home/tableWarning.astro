@@ -2,14 +2,12 @@
 import WarningIcon from "@icons/Warning.astro";
 
 interface Props {
-  class?: string;
   title?: string;
   description?: string;
   colorTitle?: string;
   colorContent?: string;
 }
 const {
-  class: className,
   title,
   description,
   colorTitle,
@@ -17,16 +15,16 @@ const {
 } = Astro.props;
 ---
 
-<div class="col-span-2 flex items-center flex-col my-5">
+<div class="container-table">
   <p
     style={`background-color: ${colorTitle};`}
-    class="flex justify-center items-center w-full text-center gap-2 p-2 !mb-0 !font-bold"
+    class="icon-table"
   >
     <WarningIcon />{title}
   </p>
   <p
     style={`background-color: ${colorContent};`}
-    class="!text-[#000] text-center p-4"
+    class="content-table"
   >
     {description}
   </p>

@@ -1,0 +1,25 @@
+.container-document {
+  position: relative;
+}
+
+.container-document .title {
+  font-size: 1.875rem;   /* text-3xl (30px) */
+  line-height: 2.25rem;  /* text-3xl (36px) */
+  font-weight: 700;      /* font-bold */
+  text-align: center;    /* text-center */
+  padding: 4rem 0;     /* py-16 (64px) */
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin: 0 auto;
+  max-width: 42rem;
+}
